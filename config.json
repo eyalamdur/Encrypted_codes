@@ -1,0 +1,5 @@
+{
+    "type": "Vigenere",
+    "encrypt": "True",
+    "key":"json key (with non-alpha chars)"
+}
