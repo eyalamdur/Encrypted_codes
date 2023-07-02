@@ -1,7 +1,6 @@
 from ex5 import CaesarCipher, VigenereCipher, getVigenereFromStr, loadEncryptionSystem
 import sys
 
-
 def test1():
     caesar = CaesarCipher(3)
     return 'd' == caesar.encrypt('a')
