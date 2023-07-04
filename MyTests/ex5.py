@@ -129,12 +129,11 @@ def loadEncryptionSystem(dirPath):
     # Extract configuration values
     try:
         encryptionType, encrypt, key = loadConfigoration(dirPath)
-    
         # Process files in the directory
         for fileName in os.listdir(dirPath):
             filePath = os.path.join(dirPath, fileName)
             if os.path.isfile(filePath):
-                if encrypt:
+                if encrypt == "True":
                     encryptFile(fileName, filePath, encryptionType, key)
                 else:
                     decryptFile(fileName, filePath, encryptionType, key)
